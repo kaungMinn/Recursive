@@ -45,7 +45,12 @@ const countToTen = (num = 1) => {
 
 // fibonacci(12);
 
-let fruits = ["Apple", "Mango", "Orange", "Strawberry", "Papaya"];
-let selectedFruits = fruits.slice(1,1)
+// let fruits = ["Apple", "Mango", "Orange", "Strawberry", "Papaya"];
+// let selectedFruits = fruits.slice(1,1)
 
-console.log(selectedFruits)
+// let array = [0, 1];
+
+// let result = array.slice(-2);
+
+// console.log(result);
+
