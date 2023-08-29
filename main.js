@@ -13,14 +13,14 @@ const countToTen = (num = 1) => {
 // 2) at least one condition to exit
 // 3) Increase Readability
 
-const recurToTen =  (num = 1) => {
-    if(num > 10) return;
-    console.log(num);
-    num++;
-    recurToTen(num)
-}
+    // const recurToTen =  (num = 1) => {
+    //     if(num > 10) return;
+    //     console.log(num);
+    //     num++;
+    //     recurToTen(num)
+    // }
 
-recurToTen()
+    // recurToTen()
 
 
 //    Reasons to NOT use Recurson
@@ -32,3 +32,20 @@ recurToTen()
 // The standard Example: The Fibonacci Sequence
 // 0, 1, 1, 2, 3, 5, 8, 13, 21, etc...
 
+//Without Recursion:
+// const fibonacci = (num, array = [0, 1]) => {
+//     while(num > 2){
+//         const [nextToLast, last] = array.slice(-2);
+//         array.push(nextToLast + last);
+//         num -= 1;
+//     }
+
+//     return array;
+// }
+
+// fibonacci(12);
+
+let fruits = ["Apple", "Mango", "Orange", "Strawberry", "Papaya"];
+let selectedFruits = fruits.slice(1,1)
+
+console.log(selectedFruits)
