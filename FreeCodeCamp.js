@@ -1,10 +1,6 @@
 function findFactorial(num) {
-  let factorial = 1;
-  for (let i = num; i > 0; i--) {
-    factorial *= i;
-  }
-
+  if (num === 0) return 1;
+  let factorial = num * findFactorial(num - 1);
   return factorial;
 }
-
 console.log(findFactorial(5));
