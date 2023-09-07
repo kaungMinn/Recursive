@@ -1,10 +1,10 @@
-function doSomething(n) {
-  if (n === 0) {
-    console.log("Task completed!");
-    return;
+function findFactorial(num) {
+  let factorial = 1;
+  for (let i = num; i > 0; i--) {
+    factorial *= i;
   }
-  console.log("I'm doing something");
-  doSomething(n - 1);
+
+  return factorial;
 }
 
-doSomething(3);
+console.log(findFactorial(5));
