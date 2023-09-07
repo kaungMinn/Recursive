@@ -1,6 +1,10 @@
-function doSomething(action) {
-  console.log(`I am ${action}`);
-  doSomething(action);
+function doSomething(n) {
+  if (n === 0) {
+    console.log("Task completed!");
+    return;
+  }
+  console.log("I'm doing something");
+  doSomething(n - 1);
 }
 
-doSomething("Running");
+doSomething(3);
